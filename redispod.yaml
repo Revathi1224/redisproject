@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redispod
+spec:
+  containers:
+  - name: rediscontainer
+    image: redis
+    ports:
+    - containerPort: 80
